@@ -1,0 +1,23 @@
+<div id="wrapper" ng-class="vm.toggle ? 'toggled' : ''">
+
+    <sidebar></sidebar>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>{{vm.content}}</h1>
+                    <p>This project is TogetherAlone, a "dating app" for introversion in a public setting.  With this application, the user will be able to "match" with locations that fit their intorversion needs.</p>
+
+                    <button type="button" class="btn btn-default btn-link" id="menu-toggle" ng-model="vm.toggle" ng-click="vm.toggle=!vm.toggle">Toggle Menu</button>
+                </div>
+            </div>
+            <br>
+            <footer-generic></footer-generic>
+        </div>
+        
+    </div>
+    <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
